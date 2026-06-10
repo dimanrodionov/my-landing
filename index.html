@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Боксерский клуб ВАВИЛОВ — профессиональные тренировки по боксу, кикбоксингу и самообороне у м. Домодедовская. Дети и взрослые, первая тренировка от 700 ₽.">
+    <title>Боксерский клуб ВАВИЛОВ — Бокс, ММА, Самооборона в Москве</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<nav id="nav">
+    <div class="wrap">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <div class="logo-box">🥊</div>
+                <div>
+                    <div class="logo-name">ВАВИЛОВ</div>
+                    <div class="logo-sub">Boxing Club</div>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#programs">Программы</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#camps">Сборы 2026</a></li>
+                <li><a href="#pricing">Цены</a></li>
+                <li><a href="#locations">Зал</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:+79267199649" class="nav-tel">+7 (926) 719-96-49</a>
+                <a href="#signup" class="btn btn-red" style="padding:11px 22px;font-size:13px;">Записаться</a>
+            </div>
+            <button class="burger" id="burger" onclick="openMenu()" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- ==================== MOBILE MENU ==================== -->
+<div id="mmenu">
+    <button class="mclose" onclick="closeMenu()">×</button>
+    <a href="#programs" onclick="closeMenu()">Программы</a>
+    <a href="#schedule" onclick="closeMenu()">Расписание</a>
+    <a href="#camps" onclick="closeMenu()">Сборы 2026</a>
+    <a href="#pricing" onclick="closeMenu()">Цены</a>
+    <a href="#locations" onclick="closeMenu()">Зал</a>
+    <a href="#signup" class="btn btn-red" onclick="closeMenu()">Записаться на тренировку</a>
+</div>
+
+<!-- ==================== HERO (ATTENTION) ==================== -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="wrap">
+        <div class="hero-content">
+            <div class="hero-pill">
+                <span class="hero-dot"></span>
+                Набор открыт — первая тренировка 700 ₽
+            </div>
+            <h1>
+                Бей сильнее.
+                <em>Побеждай.</em>
+                Живи ярче.
+            </h1>
+            <p class="hero-sub">
+                Боксерский клуб ВАВИЛОВ — профессиональные тренировки по боксу, кикбоксингу и самообороне. Москва, м. Домодедовская, дети от 6 лет и взрослые.
+            </p>
+            <div class="hero-cta">
+                <a href="#signup" class="btn btn-red" style="font-size:17px;padding:19px 38px;">
+                    Записаться на пробную тренировку
+                </a>
+                <a href="#programs" class="btn btn-outline">Смотреть программы</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hstat">
+                    <span class="hstat-n" style="color:var(--red)">9+</span>
+                    <span class="hstat-l">лет опыта</span>
+                </div>
+                <div class="hsep"></div>
+                <div class="hstat">
+                    <span class="hstat-n">90+</span>
+                    <span class="hstat-l">детей тренируется</span>
+                </div>
+                <div class="hsep"></div>
+                <div class="hstat">
+                    <span class="hstat-n" style="font-size:22px;letter-spacing:-0.01em;">м. Домодедовская</span>
+                    <span class="hstat-l">Наш зал</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== STRIP ==================== -->
+<div class="strip">
+    <div class="wrap">
+        <div class="strip-grid">
+            <div class="sitem">
+                <div class="sitem-n" data-count="700" data-suffix="₽">700₽</div>
+                <div class="sitem-l">Пробное занятие</div>
+            </div>
+            <div class="sitem">
+                <div class="sitem-n" data-count="8" data-suffix="">8</div>
+                <div class="sitem-l">Видов тренировок</div>
+            </div>
+            <div class="sitem">
+                <div class="sitem-n" data-count="10" data-suffix="+">10+</div>
+                <div class="sitem-l">Лет опыта тренера</div>
+            </div>
+            <div class="sitem">
+                <div class="sitem-n">Лето</div>
+                <div class="sitem-l">Сборы 2026</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== WHY (INTEREST) ==================== -->
+<section class="sec" id="why">
+    <div class="wrap">
+        <div class="why-grid">
+            <div class="why-visual">
+                <div class="why-fig">🥊</div>
+                <div class="why-float">
+                    <div class="why-float-n">9+</div>
+                    <div class="why-float-l">лет тренерского опыта</div>
+                </div>
+            </div>
+            <div>
+                <div class="label">Почему бокс</div>
+                <h2 class="sec-title">
+                    Бокс — это не просто<br>спорт. <span>Это характер.</span>
+                </h2>
+                <p class="sec-sub">
+                    В клубе ВАВИЛОВ мы не просто учим бить. Мы формируем дисциплину, уверенность и силу духа. Каждая тренировка — шаг к лучшей версии себя.
+                </p>
+                <div class="benefits">
+                    <div class="bitem anim">
+                        <div class="bicon">💪</div>
+                        <div class="btxt">
+                            <h4>Физическая форма за 3 месяца</h4>
+                            <p>Комплексные тренировки развивают выносливость, скорость и силу. Сжигай до 800 ккал за занятие, не скучая ни секунды.</p>
+                        </div>
+                    </div>
+                    <div class="bitem anim">
+                        <div class="bicon">🛡️</div>
+                        <div class="btxt">
+                            <h4>Реальные навыки самообороны</h4>
+                            <p>Практические техники, которые работают в реальных ситуациях. Защити себя и близких с первых месяцев занятий.</p>
+                        </div>
+                    </div>
+                    <div class="bitem anim">
+                        <div class="bicon">🧠</div>
+                        <div class="btxt">
+                            <h4>Ментальная сила и уверенность</h4>
+                            <p>Бокс тренирует не только тело — он формирует психологическую устойчивость, концентрацию и самоконтроль.</p>
+                        </div>
+                    </div>
+                    <div class="bitem anim">
+                        <div class="bicon">👨‍👩‍👧</div>
+                        <div class="btxt">
+                            <h4>Для всей семьи — с 6 лет</h4>
+                            <p>Специальные программы для детей, подростков, взрослых и женщин. Отдельные группы для каждого уровня.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PROGRAMS (INTEREST) ==================== -->
+<section class="sec sec-dark" id="programs">
+    <div class="wrap">
+        <div class="sec-hd center">
+            <div class="label center">Программы</div>
+            <h2 class="sec-title">Выбери свой <span>путь</span></h2>
+            <p class="sec-sub">Профессиональные тренировки по всем дисциплинам единоборств — для любого уровня подготовки и возраста.</p>
+        </div>
+        <div class="prog-grid">
+            <div class="pcard anim">
+                <span class="pcard-emoji">🥊</span>
+                <h3 class="pcard-title">Бокс</h3>
+                <p class="pcard-desc">Классический бокс: техника ударов, защита, работа в ринге. Отдельные группы для начинающих, любителей и детей.</p>
+                <div class="tags">
+                    <span class="tag">Начинающие</span>
+                    <span class="tag">Любители</span>
+                    <span class="tag">Дети</span>
+                </div>
+            </div>
+            <div class="pcard anim">
+                <span class="pcard-emoji">🦵</span>
+                <h3 class="pcard-title">Кикбоксинг</h3>
+                <p class="pcard-desc">Удары руками и ногами в комбинациях. Отличная кардио-нагрузка и всестороннее развитие боевых навыков.</p>
+                <div class="tags">
+                    <span class="tag">Кардио</span>
+                    <span class="tag">Техника</span>
+                    <span class="tag">Взрослые</span>
+                </div>
+            </div>
+            <div class="pcard anim">
+                <span class="pcard-emoji">🤼</span>
+                <h3 class="pcard-title">ММА</h3>
+                <p class="pcard-desc">Смешанные единоборства: бокс + борьба. Самая полная боевая система для тех, кто хочет освоить всё.</p>
+                <div class="tags">
+                    <span class="tag">Комплексно</span>
+                    <span class="tag">Продвинутые</span>
+                </div>
+            </div>
+            <div class="pcard anim">
+                <span class="pcard-emoji">🛡️</span>
+                <h3 class="pcard-title">Самооборона</h3>
+                <p class="pcard-desc">Практические техники самозащиты в реальных ситуациях. Идеально для тех, кто не планирует участвовать в соревнованиях.</p>
+                <div class="tags">
+                    <span class="tag">Практика</span>
+                    <span class="tag">Все уровни</span>
+                    <span class="tag">Женщины</span>
+                </div>
+            </div>
+            <div class="pcard anim">
+                <span class="pcard-emoji">🏋️</span>
+                <h3 class="pcard-title">ОФП / СФП</h3>
+                <p class="pcard-desc">Общая и специальная физподготовка. Сила, скорость, выносливость — фундамент для любого вида спорта.</p>
+                <div class="tags">
+                    <span class="tag">Физподготовка</span>
+                    <span class="tag">Функционал</span>
+                </div>
+            </div>
+            <div class="pcard anim">
+                <span class="pcard-emoji">🤸</span>
+                <h3 class="pcard-title">Борьба и Йога</h3>
+                <p class="pcard-desc">Греко-римская борьба и йога для восстановления. Гибкость, баланс и работа с телом как дополнение к ударным видам.</p>
+                <div class="tags">
+                    <span class="tag">Борьба</span>
+                    <span class="tag">Восстановление</span>
+                    <span class="tag">Все уровни</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== TRAINER (DESIRE) ==================== -->
+<section class="sec" id="trainers">
+    <div class="wrap">
+        <div class="sec-hd center">
+            <div class="label center">Тренер</div>
+            <h2 class="sec-title">Твой тренер — <span>настоящий</span> боец</h2>
+            <p class="sec-sub">Сертифицированный специалист со спортивным разрядом и многолетней тренерской практикой.</p>
+        </div>
+        <div style="display:flex;justify-content:center;">
+            <div class="trcard anim" style="max-width:440px;width:100%;">
+                <div class="tr-ava" style="font-size:96px;">💪</div>
+                <div class="tr-info" style="padding:28px 28px 32px;">
+                    <div class="tr-name" style="font-size:20px;margin-bottom:6px;">Гатаеев Рустам</div>
+                    <div class="tr-spec" style="font-size:13px;margin-bottom:16px;">КМС по боксу · Самооборона · ОФП</div>
+                    <p class="tr-desc" style="font-size:14px;line-height:1.7;">10 лет в боксе, 5 лет тренерского стажа. КМС по боксу, 1-й разряд по борьбе. Специалист по общей и специальной физической подготовке. Победитель турниров, автор детских и взрослых программ клуба.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;">
+                        <span class="tag" style="font-size:12px;">Бокс</span>
+                        <span class="tag" style="font-size:12px;">Самооборона</span>
+                        <span class="tag" style="font-size:12px;">ОФП / СФП</span>
+                        <span class="tag" style="font-size:12px;">Дети</span>
+                        <span class="tag" style="font-size:12px;">Взрослые</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== RESULTS (DESIRE) ==================== -->
+<section class="sec sec-dark">
+    <div class="wrap">
+        <div class="sec-hd center">
+            <div class="label center">Результаты</div>
+            <h2 class="sec-title">Что ты получишь<br>через <span>3 месяца</span></h2>
+        </div>
+        <div class="res-grid">
+            <div class="rcard anim">
+                <div class="rcard-n">−5 кг</div>
+                <div class="rcard-title">Снижение веса</div>
+                <p class="rcard-desc">Интенсивные тренировки сжигают до 800 ккал за занятие. Реальный и устойчивый результат уже через первые 3 месяца.</p>
+            </div>
+            <div class="rcard anim">
+                <div class="rcard-n">3×</div>
+                <div class="rcard-title">Рост физических показателей</div>
+                <p class="rcard-desc">Комплексная физподготовка кратно увеличивает силу, скорость реакции и выносливость.</p>
+            </div>
+            <div class="rcard anim">
+                <div class="rcard-n">100%</div>
+                <div class="rcard-title">Уверенность в себе</div>
+                <p class="rcard-desc">Ты научишься защищать себя и близких. Уверенность, которая остаётся с тобой навсегда.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CAMPS (DESIRE) ==================== -->
+<section class="sec" id="camps">
+    <div class="wrap">
+        <div class="camps-card">
+            <div>
+                <div class="camps-pill">⚡ Горячее предложение</div>
+                <h2 class="camps-h">
+                    Летние сборы<br>
+                    <span class="gold">2–10 июля 2026</span>
+                </h2>
+                <p class="camps-p">
+                    Олимпийская база в Чехове, Московская область. 9 дней интенсивных тренировок, спорта и незабываемых впечатлений для детей и взрослых от 6 лет.
+                </p>
+                <div class="camps-feats">
+                    <div class="cfeat"><span class="cfeat-ico">🥊</span><span>3 тренировки в день — бокс, борьба, самооборона</span></div>
+                    <div class="cfeat"><span class="cfeat-ico">🏠</span><span>Проживание 3–4 человека на олимпийской базе</span></div>
+                    <div class="cfeat"><span class="cfeat-ico">🍽️</span><span>Полноценное питание — шведский стол</span></div>
+                    <div class="cfeat"><span class="cfeat-ico">⚽</span><span>Футбол, волейбол, квесты, вечерние мероприятия</span></div>
+                    <div class="cfeat"><span class="cfeat-ico">🎬</span><span>Собственный кинотеатр, настольные игры, шахматы</span></div>
+                </div>
+                <a href="#signup" class="btn btn-gold">Записаться на сборы →</a>
+            </div>
+            <div class="price-box">
+                <div class="price-tag">Стоимость на человека</div>
+                <div class="price-big">51 500 ₽</div>
+                <div class="price-small">Предоплата: 17 000 ₽ · Остаток до 1 июня</div>
+                <div class="price-warn">⚠️ После 15 мая цена вырастет на 18%</div>
+                <a href="tel:+79267199649" class="btn btn-red" style="width:100%;margin-bottom:14px;">
+                    Записаться: +7 (926) 719-96-49
+                </a>
+                <p style="font-size:12px;color:var(--g2)">Telegram · WhatsApp · SMS</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PRICING (ACTION) ==================== -->
+<section class="sec sec-dark" id="pricing">
+    <div class="wrap">
+        <div class="sec-hd center">
+            <div class="label center">Стоимость</div>
+            <h2 class="sec-title">Выбери свой <span>формат</span></h2>
+            <p class="sec-sub">Нажми на нужный тип занятий, чтобы увидеть цены.</p>
+        </div>
+        <div class="pr-accordion">
+
+            <!-- ГРУППОВЫЕ -->
+            <div class="pr-panel" id="panel-group">
+                <div class="pr-toggle" onclick="togglePanel('panel-group')">
+                    <div class="pr-toggle-left">
+                        <div class="pr-toggle-ico">👥</div>
+                        <div>
+                            <div class="pr-toggle-title">Групповые занятия</div>
+                            <div class="pr-toggle-sub">от 1 000 ₽ · 6 вариантов</div>
+                        </div>
+                    </div>
+                    <div class="pr-toggle-arrow">▼</div>
+                </div>
+                <div class="pr-body">
+                    <div class="pr-body-inner">
+                        <div class="pricing-grid">
+                            <div class="prcard">
+                                <div class="pr-label">Разовое</div>
+                                <div class="pr-type">1 занятие</div>
+                                <div class="pr-price">1 000 ₽</div>
+                                <div class="pr-period">1 000 ₽ / занятие</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Групповая тренировка</li>
+                                    <li>Любое направление</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard">
+                                <div class="pr-label">Пакет</div>
+                                <div class="pr-type">4 занятия</div>
+                                <div class="pr-price">4 900 ₽</div>
+                                <div class="pr-period">1 225 ₽ / занятие</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Групповые тренировки</li>
+                                    <li>Любое направление</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard">
+                                <div class="pr-label">Пакет</div>
+                                <div class="pr-type">8 занятий</div>
+                                <div class="pr-price">5 900 ₽</div>
+                                <div class="pr-period">737 ₽ / занятие</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Групповые тренировки</li>
+                                    <li>Любое направление</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard hot">
+                                <div class="hot-badge">Выгоднее всего</div>
+                                <div class="pr-label">Пакет</div>
+                                <div class="pr-type">12 занятий</div>
+                                <div class="pr-price">6 900 ₽</div>
+                                <div class="pr-period">575 ₽ / занятие</div>
+                                <div class="pr-div"></div>
+                                <span class="pr-savings">Экономия 5 100 ₽ vs разовых</span>
+                                <ul class="pr-feats">
+                                    <li>Групповые тренировки</li>
+                                    <li>Любое направление</li>
+                                    <li>Лучшая цена за занятие</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-red" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard">
+                                <div class="pr-label">Долгосрочный</div>
+                                <div class="pr-type">6 месяцев</div>
+                                <div class="pr-price">39 000 ₽</div>
+                                <div class="pr-period">6 500 ₽ / месяц</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Неограниченные тренировки</li>
+                                    <li>Все направления</li>
+                                    <li>Фиксированная цена</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard">
+                                <div class="pr-label">Долгосрочный</div>
+                                <div class="pr-type">12 месяцев</div>
+                                <div class="pr-price">69 000 ₽</div>
+                                <div class="pr-period">5 750 ₽ / месяц</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Неограниченные тренировки</li>
+                                    <li>Все направления</li>
+                                    <li>Максимальная экономия</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ИНДИВИДУАЛЬНЫЕ -->
+            <div class="pr-panel" id="panel-personal">
+                <div class="pr-toggle" onclick="togglePanel('panel-personal')">
+                    <div class="pr-toggle-left">
+                        <div class="pr-toggle-ico">🥊</div>
+                        <div>
+                            <div class="pr-toggle-title">Индивидуальные занятия</div>
+                            <div class="pr-toggle-sub">от 2 000 ₽ · личный тренер</div>
+                        </div>
+                    </div>
+                    <div class="pr-toggle-arrow">▼</div>
+                </div>
+                <div class="pr-body">
+                    <div class="pr-body-inner">
+                        <div class="pricing-grid">
+                            <div class="prcard">
+                                <div class="pr-label">Первый шаг</div>
+                                <div class="pr-type">1 пробное занятие</div>
+                                <div class="pr-price">2 000 ₽</div>
+                                <div class="pr-period">Знакомство с тренером</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Личный тренер</li>
+                                    <li>Оценка уровня подготовки</li>
+                                    <li>Составление программы</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard">
+                                <div class="pr-label">Разовое</div>
+                                <div class="pr-type">1 занятие</div>
+                                <div class="pr-price">4 000 ₽</div>
+                                <div class="pr-period">4 000 ₽ / занятие</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Личный тренер</li>
+                                    <li>Индивидуальная программа</li>
+                                    <li>Гибкое расписание</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard">
+                                <div class="pr-label">Пакет</div>
+                                <div class="pr-type">4 занятия</div>
+                                <div class="pr-price">14 000 ₽</div>
+                                <div class="pr-period">3 500 ₽ / занятие</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Личный тренер</li>
+                                    <li>Индивидуальная программа</li>
+                                    <li>Гибкое расписание</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard">
+                                <div class="pr-label">Пакет</div>
+                                <div class="pr-type">8 занятий</div>
+                                <div class="pr-price">24 000 ₽</div>
+                                <div class="pr-period">3 000 ₽ / занятие</div>
+                                <div class="pr-div"></div>
+                                <ul class="pr-feats">
+                                    <li>Личный тренер</li>
+                                    <li>Индивидуальная программа</li>
+                                    <li>Гибкое расписание</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-outline" style="width:100%">Записаться</a>
+                            </div>
+                            <div class="prcard hot">
+                                <div class="hot-badge">Выгоднее всего</div>
+                                <div class="pr-label">Пакет</div>
+                                <div class="pr-type">12 занятий</div>
+                                <div class="pr-price">32 000 ₽</div>
+                                <div class="pr-period">2 667 ₽ / занятие</div>
+                                <div class="pr-div"></div>
+                                <span class="pr-savings">Экономия 16 000 ₽ vs разовых</span>
+                                <ul class="pr-feats">
+                                    <li>Личный тренер</li>
+                                    <li>Индивидуальная программа</li>
+                                    <li>Лучшая цена за занятие</li>
+                                </ul>
+                                <a href="#signup" class="btn btn-red" style="width:100%">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="sec" id="faq">
+    <div class="wrap">
+        <div class="sec-hd center">
+            <div class="label center">FAQ</div>
+            <h2 class="sec-title">Часто задаваемые <span>вопросы</span></h2>
+        </div>
+        <div class="faq-list">
+            <div class="fitem">
+                <div class="fq" onclick="toggleFaq(this)">
+                    <span class="fq-txt">Нужна ли физическая подготовка, чтобы начать?</span>
+                    <span class="fq-ico">+</span>
+                </div>
+                <div class="fa">
+                    <p>Нет! Мы принимаем учеников с нулевым уровнем подготовки. Тренеры составят программу, подходящую именно вашей физической форме и целям. Первая тренировка — это знакомство и оценка уровня. Многие наши ученики начали с нуля и сейчас участвуют в соревнованиях.</p>
+                </div>
+            </div>
+            <div class="fitem">
+                <div class="fq" onclick="toggleFaq(this)">
+                    <span class="fq-txt">С какого возраста можно отдать ребёнка в секцию?</span>
+                    <span class="fq-ico">+</span>
+                </div>
+                <div class="fa">
+                    <p>Мы принимаем детей от 6 лет. Специальные группы для детей и подростков ведут опытные тренеры — Ахадов Арзу, Смирнова Дарья и основатель клуба Мирзоев Хаём, у которого уже более 90 юных воспитанников.</p>
+                </div>
+            </div>
+            <div class="fitem">
+                <div class="fq" onclick="toggleFaq(this)">
+                    <span class="fq-txt">Что взять на первую тренировку?</span>
+                    <span class="fq-ico">+</span>
+                </div>
+                <div class="fa">
+                    <p>На первое занятие достаточно удобной спортивной одежды и кроссовок. Боксёрские перчатки и бинты можно взять в клубе или приобрести у нас. Мы поможем с подбором экипировки для регулярных тренировок.</p>
+                </div>
+            </div>
+            <div class="fitem">
+                <div class="fq" onclick="toggleFaq(this)">
+                    <span class="fq-txt">Есть ли тренировки специально для женщин?</span>
+                    <span class="fq-ico">+</span>
+                </div>
+                <div class="fa">
+                    <p>Да! У нас тренируются женщины всех возрастов. Тренер Смирнова Дарья и тренер Вашева Ольга специализируются на работе с девушками. Бокс и самооборона — идеальный выбор для уверенности в себе и отличной физической формы.</p>
+                </div>
+            </div>
+            <div class="fitem">
+                <div class="fq" onclick="toggleFaq(this)">
+                    <span class="fq-txt">Как часто нужно тренироваться для результата?</span>
+                    <span class="fq-ico">+</span>
+                </div>
+                <div class="fa">
+                    <p>Для хорошего прогресса — 2–3 раза в неделю. Расписание позволяет тренироваться как утром (с 9:00), так и вечером (19:30 и 21:00). Безлимитный абонемент позволяет ходить хоть каждый день — вы сами выбираете темп.</p>
+                </div>
+            </div>
+            <div class="fitem">
+                <div class="fq" onclick="toggleFaq(this)">
+                    <span class="fq-txt">Будут ли заставлять участвовать в соревнованиях?</span>
+                    <span class="fq-ico">+</span>
+                </div>
+                <div class="fa">
+                    <p>Нет никакой обязаловки. Большинство наших учеников тренируются для себя — для здоровья, самообороны или просто удовольствия. Соревнования — только для тех, кто этого хочет и готов. Никакого давления.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SIGNUP (ACTION) ==================== -->
+<section class="sec" id="signup">
+    <div class="wrap">
+        <div class="signup-wrap">
+            <div class="signup-content">
+                <div class="label center" style="margin-bottom:20px;">Записаться</div>
+                <h2 class="signup-title">
+                    Первая тренировка —<br>
+                    всего <span style="color:var(--red)">700 рублей</span>
+                </h2>
+                <p class="signup-sub">
+                    Оставь номер — мы свяжемся в течение 15 минут и запишем на удобное время.
+                </p>
+                <form class="sform" onsubmit="submitForm(event)">
+                    <input type="tel" class="sinput" id="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+                    <button type="submit" class="btn btn-red">Записаться →</button>
+                </form>
+                <p class="signup-note">
+                    Или позвони сам: <a href="tel:+79267199649" style="color:var(--red);text-decoration:none;font-weight:700;">+7 (926) 719-96-49</a>
+                </p>
+                <div class="signup-social">
+                    <a href="https://t.me/ale_haem" target="_blank" class="soc-link">
+                        <span class="soc-ico">✈️</span> Telegram
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=79267199649" target="_blank" class="soc-link">
+                        <span class="soc-ico">💬</span> WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/vavilov_boxing/" target="_blank" class="soc-link">
+                        <span class="soc-ico">📸</span> Instagram
+                    </a>
+                    <a href="mailto:boxing-vavilov@yandex.ru" class="soc-link">
+                        <span class="soc-ico">✉️</span> Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SCHEDULE (ACTION) ==================== -->
+<section class="sec" id="schedule">
+    <div class="wrap">
+        <div class="sec-hd center">
+            <div class="label center">Расписание</div>
+            <h2 class="sec-title">Тренировки <span>каждую неделю</span></h2>
+            <p class="sec-sub">м. Домодедовская · ул. Шипиловская, 34к1</p>
+        </div>
+        <div class="sch-groups">
+            <!-- ДЕТИ -->
+            <div class="sch-group anim">
+                <div class="sch-group-head">
+                    <span class="sch-group-ico">🧒</span>
+                    <span class="sch-group-title">Дети</span>
+                </div>
+                <div class="sch-discipline">
+                    <div class="sch-disc-label">Бокс</div>
+                    <div class="sch-rows">
+                        <div class="sch-row">
+                            <span class="sch-days">Пн, Ср, Пт</span>
+                            <span class="sch-time">17:00</span>
+                            <span class="sch-meta">дети · 60 мин</span>
+                        </div>
+                        <div class="sch-row">
+                            <span class="sch-days">Пн, Ср, Пт</span>
+                            <span class="sch-time">10:00</span>
+                            <span class="sch-meta">юниоры · 60 мин</span>
+                        </div>
+                        <div class="sch-row">
+                            <span class="sch-days">Пн, Ср, Пт</span>
+                            <span class="sch-time">18:00</span>
+                            <span class="sch-meta">юниоры · 90 мин</span>
+                        </div>
+                        <div class="sch-row">
+                            <span class="sch-days">Вт, Чт</span>
+                            <span class="sch-time">19:30</span>
+                            <span class="sch-meta">смешанная · 90 мин</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ВЗРОСЛЫЕ -->
+            <div class="sch-group anim">
+                <div class="sch-group-head">
+                    <span class="sch-group-ico">🥊</span>
+                    <span class="sch-group-title">Взрослые</span>
+                </div>
+                <div class="sch-discipline">
+                    <div class="sch-disc-label">Бокс</div>
+                    <div class="sch-rows">
+                        <div class="sch-row">
+                            <span class="sch-days">Пн–Пт</span>
+                            <span class="sch-time">19:30</span>
+                            <span class="sch-meta">90 мин</span>
+                        </div>
+                        <div class="sch-row">
+                            <span class="sch-days">Сб</span>
+                            <span class="sch-time">11:00</span>
+                            <span class="sch-meta">смешанная · 90 мин</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sch-discipline">
+                    <div class="sch-disc-label">Кикбоксинг (женский)</div>
+                    <div class="sch-rows">
+                        <div class="sch-row">
+                            <span class="sch-days">Вт, Чт</span>
+                            <span class="sch-time">20:00</span>
+                            <span class="sch-meta">60 мин</span>
+                        </div>
+                        <div class="sch-row">
+                            <span class="sch-days">Сб</span>
+                            <span class="sch-time">13:00</span>
+                            <span class="sch-meta">60 мин</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== LOCATION (ACTION) ==================== -->
+<section class="sec sec-dark" id="locations">
+    <div class="wrap">
+        <div class="sec-hd center">
+            <div class="label center">Зал</div>
+            <h2 class="sec-title">Мы у <span>Домодедовской</span></h2>
+            <p class="sec-sub">Профессиональное оборудование, просторный зал, удобная парковка.</p>
+        </div>
+        <div style="display:flex;justify-content:center;">
+            <div class="lcard anim" style="max-width:480px;width:100%;">
+                <div class="lnum">01</div>
+                <h3 class="ltitle">Домодедовская</h3>
+                <div class="lmetro">🚇 м. Домодедовская</div>
+                <p class="laddr">ул. Шипиловская, 34к1</p>
+                <div class="lsched">
+                    <span>🧒 Дети (бокс): Пн/Ср/Пт 10:00, 17:00, 18:00 · Вт/Чт 19:30</span>
+                    <span>🥊 Взрослые (бокс): Пн–Пт 19:30 · Сб 11:00</span>
+                    <span>👩 Кикбоксинг женский: Вт/Чт 20:00 · Сб 13:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+    <div class="wrap">
+        <div class="foot-grid">
+            <div>
+                <a href="#" class="logo">
+                    <div class="logo-box">🥊</div>
+                    <div>
+                        <div class="logo-name">ВАВИЛОВ</div>
+                        <div class="logo-sub">Boxing Club</div>
+                    </div>
+                </a>
+                <p class="foot-desc">Профессиональные тренировки по боксу, кикбоксингу и самообороне у м. Домодедовская. Дети с 6 лет и взрослые.</p>
+                <div class="foot-social">
+                    <a href="https://t.me/ale_haem" target="_blank" class="fsoc" title="Telegram">✈️</a>
+                    <a href="https://api.whatsapp.com/send/?phone=79267199649" target="_blank" class="fsoc" title="WhatsApp">💬</a>
+                    <a href="https://www.instagram.com/vavilov_boxing/" target="_blank" class="fsoc" title="Instagram">📸</a>
+                </div>
+            </div>
+            <div>
+                <div class="fhead">Программы</div>
+                <ul class="flinks">
+                    <li><a href="#programs">Бокс</a></li>
+                    <li><a href="#programs">Кикбоксинг</a></li>
+                    <li><a href="#programs">ММА</a></li>
+                    <li><a href="#programs">Самооборона</a></li>
+                    <li><a href="#programs">ОФП / СФП</a></li>
+                    <li><a href="#camps">Сборы лето 2026</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="fhead">Клуб</div>
+                <ul class="flinks">
+                    <li><a href="#trainers">Тренеры</a></li>
+                    <li><a href="#pricing">Цены</a></li>
+                    <li><a href="#locations">Залы</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#signup">Записаться</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="fhead">Контакты</div>
+                <div class="fcontact">
+                    <div>
+                        <div class="fci-label">Телефон</div>
+                        <a href="tel:+79267199649" class="fci-val">+7 (926) 719-96-49</a>
+                    </div>
+                    <div>
+                        <div class="fci-label">Телефон 2</div>
+                        <a href="tel:+79671819116" class="fci-val">+7 (967) 181-91-16</a>
+                    </div>
+                    <div>
+                        <div class="fci-label">Email</div>
+                        <a href="mailto:boxing-vavilov@yandex.ru" class="fci-val">boxing-vavilov@yandex.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <p class="fcopy">© 2024 VAVILOV-BOXING. Все права защищены.</p>
+            <a href="https://vavilov-boxing.ru/privacy" style="font-size:12px;color:var(--g3);text-decoration:none;">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+<!-- ==================== FLOAT CTA ==================== -->
+<div id="floatcta">
+    <a href="#signup" class="btn btn-red">🥊 Записаться на тренировку</a>
+</div>
+
+<!-- ==================== JS ==================== -->
+<script>
+    // NAV scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Float CTA
+    const fcta = document.getElementById('floatcta');
+    window.addEventListener('scroll', () => {
+        fcta.classList.toggle('show', window.scrollY > window.innerHeight * 0.7);
+    }, { passive: true });
+
+    // Mobile menu
+    function openMenu() {
+        document.getElementById('mmenu').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+        document.getElementById('mmenu').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // Price accordion
+    function togglePanel(id) {
+        const panel = document.getElementById(id);
+        panel.classList.toggle('open');
+    }
+
+    // FAQ
+    function toggleFaq(btn) {
+        const item = btn.closest('.fitem');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.fitem.open').forEach(el => el.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+    }
+
+    // Scroll animations
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.anim').forEach(el => obs.observe(el));
+
+    // Counter animation
+    function animCount(el, to, suffix, dur = 1800) {
+        const start = performance.now();
+        const tick = now => {
+            const p = Math.min((now - start) / dur, 1);
+            const ease = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(ease * to) + suffix;
+            if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+    }
+
+    const stripObs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            e.target.querySelectorAll('[data-count]').forEach(el => {
+                animCount(el, +el.dataset.count, el.dataset.suffix || '');
+            });
+            stripObs.unobserve(e.target);
+        });
+    }, { threshold: 0.5 });
+    const strip = document.querySelector('.strip');
+    if (strip) stripObs.observe(strip);
+
+    // Form submit
+    function submitForm(e) {
+        e.preventDefault();
+        const ph = document.getElementById('phone').value.trim();
+        if (ph.replace(/\D/g,'').length < 10) {
+            alert('Пожалуйста, введите корректный номер телефона.');
+            return;
+        }
+        alert('Спасибо! Мы перезвоним в течение 15 минут. До встречи на тренировке! 🥊');
+        document.getElementById('phone').value = '';
+    }
+</script>
+</body>
+</html>
